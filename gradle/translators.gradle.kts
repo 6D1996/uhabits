@@ -6,6 +6,10 @@ import java.io.StringWriter
 
 buildscript {
     repositories {
+        // 中国镜像仓库
+        maven(url = "https://maven.aliyun.com/repository/central")
+        maven(url = "https://maven.aliyun.com/repository/public")
+        
         mavenCentral()
     }
     dependencies {

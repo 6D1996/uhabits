@@ -36,7 +36,7 @@ Updating gradle might fix this, so try again in the future to remove this and ru
 If this doesn't produce any warning, try to remove it.
  */
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
 
 android {
@@ -79,11 +79,11 @@ android {
 
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
-        targetCompatibility(JavaVersion.VERSION_17)
-        sourceCompatibility(JavaVersion.VERSION_17)
+        targetCompatibility(JavaVersion.VERSION_21)
+        sourceCompatibility(JavaVersion.VERSION_21)
     }
 
-    kotlinOptions.jvmTarget = JavaVersion.VERSION_17.toString()
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_21.toString()
     buildFeatures.viewBinding = true
     lint.abortOnError = false
 }
